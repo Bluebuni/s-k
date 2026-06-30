@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>S&K Indumentaria</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Catchy Mager (reemplazar por archivo local cuando la tengas) -->
+    <!-- TT Lovelies Script (también la agregaremos localmente) -->
+
+    <!-- Fuente general -->
+    <link href="https://fonts.googleapis.com/css2?family=Agrandir:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Íconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- MENÚ LATERAL -->
+    <!-- ========================= -->
+
+    <aside id="sidebar">
+
+        <div class="sidebar-header">
+
+            <button id="closeSidebar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <nav>
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="#" class="category-link" data-category="Camperas">
+                <i class="fa-solid fa-shirt"></i>
+                Camperas
+            </a>
+
+            <a href="#" class="category-link" data-category="Buzos">
+                <i class="fa-solid fa-shirt"></i>
+                Buzos
+            </a>
+
+            <a href="#" class="category-link" data-category="Poleras">
+                <i class="fa-solid fa-shirt"></i>
+                Poleras
+            </a>
+
+            <a href="#" class="category-link" data-category="Pantalones">
+                <i class="fa-solid fa-shirt"></i>
+                Pantalones
+            </a>
+
+            <a href="#" class="category-link" data-category="Accesorios">
+                <i class="fa-solid fa-shirt"></i>
+                Accesorios
+            </a>
+
+            <hr>
+
+            <a href="#" id="contactButton">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Contactanos
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <div id="overlay"></div>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+
+        <button id="menuButton">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <div class="logo">
+
+            <h1>S&amp;K</h1>
+
+            <span>Indumentaria</span>
+
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar...">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- BANNER -->
+    <!-- ========================= -->
+
+    <section class="announcement">
+
+        <div class="announcement-track">
+
+            <span>
+                Moda por encargo • Disponibilidad sujeta a confirmación •
+                Consultanos por WhatsApp • Hasta 10 días hábiles de demora •
+            </span>
+
+            <span>
+                Moda por encargo • Disponibilidad sujeta a confirmación •
+                Consultanos por WhatsApp • Hasta 10 días hábiles de demora •
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ONDA -->
+    <!-- ========================= -->
+
+    <div class="wave">
+
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+
+            <path
+                d="M0,40 C120,120 240,0 360,40 C480,80 600,0 720,40 C840,80 960,0 1080,40 C1200,80 1320,0 1440,40 L1440,120 L0,120 Z">
+
+            </path>
+
+        </svg>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- PRODUCTOS -->
+    <!-- ========================= -->
+
+    <main>
+
+        <section id="products">
+
+            <!--
+                Los productos se insertarán automáticamente
+                desde Google Sheets mediante script.js
+            -->
+
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- CARRITO -->
+    <!-- ========================= -->
+
+    <button id="cartButton">
+
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        <span id="cartCount">
+
+            0
+
+        </span>
+
+    </button>
+
+    <!-- Panel del carrito -->
+
+    <aside id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>
+
+                Mi pedido
+
+            </h2>
+
+            <button id="closeCart">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div id="cartItems">
+
+            <!-- Productos -->
+
+        </div>
+
+        <div class="cart-footer">
+
+            <button id="sendWhatsapp">
+
+                Consultar por WhatsApp
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
