@@ -138,7 +138,7 @@ header{
 
     width:100%;
 
-    height:220px;
+    height:175px;
 
     background:linear-gradient(
         180deg,
@@ -1165,5 +1165,23 @@ main{
     margin-bottom:15px;
 
     color:#cccccc;
+
+.logo-s{
+
+    color:#F8E4B8;
+
+}
+
+.logo-amp{
+
+    color:#5B4315;
+
+}
+
+.logo-k{
+
+    color:#E2AE2A;
+
+}
 
 }
