@@ -138,7 +138,7 @@ header{
 
     width:100%;
 
-    height:175px;
+    height:160px;
 
     background:linear-gradient(
         180deg,
@@ -152,9 +152,13 @@ header{
 
     justify-content:space-between;
 
-    padding:0 50px;
+    padding:0 40px;
 
     position:relative;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:20;
 
 }
 
@@ -170,13 +174,15 @@ header{
 
     justify-content:center;
 
+    transform:translateY(-6px);
+
 }
 
 .logo h1{
 
     font-family:"Catchy";
 
-    font-size:7rem;
+    font-size:6.3rem;
 
     line-height:1;
 
@@ -184,22 +190,39 @@ header{
 
     letter-spacing:2px;
 
-    color:#F8E1B7;
-
-    text-shadow:
-    0 2px 3px rgba(0,0,0,.15);
+    text-shadow:0 3px 8px rgba(0,0,0,.15);
 
 }
 
-.logo span{
-	
-	 font-family:"Lovely";
-	
-	 font-size:2.3rem;
-	
-	 color:white;
-	
-	 font-style:italic;
+.logo-s{
+
+    color:#F8E4B8;
+
+}
+
+.logo-amp{
+
+    color:#5A4215;
+
+}
+
+.logo-k{
+
+    color:#E1AE29;
+
+}
+
+.logo>span{
+
+    font-family:"Lovely";
+
+    font-size:2rem;
+
+    color:white;
+
+    margin-top:-8px;
+
+    letter-spacing:1px;
 
 }
 
@@ -207,9 +230,9 @@ header{
 
 #menuButton{
 
-    width:65px;
+    width:62px;
 
-    height:65px;
+    height:62px;
 
     border-radius:50%;
 
@@ -239,13 +262,13 @@ header{
 
 .search-box{
 
-    width:340px;
+    width:310px;
 
-    height:58px;
+    height:54px;
 
     background:white;
 
-    border-radius:50px;
+    border-radius:999px;
 
     display:flex;
 
@@ -263,15 +286,15 @@ header{
 
     height:100%;
 
-    padding:0 25px;
+    padding:0 22px;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
 }
 
 .search-box button{
 
-    width:60px;
+    width:56px;
 
     height:100%;
 
@@ -281,7 +304,7 @@ header{
 
 .search-box i{
 
-    font-size:1.5rem;
+    font-size:1.35rem;
 
 }
 
@@ -291,7 +314,7 @@ header{
 
     width:100%;
 
-    height:54px;
+    height:42px;
 
     background:#F7D7BD;
 
@@ -302,6 +325,10 @@ header{
     align-items:center;
 
     white-space:nowrap;
+
+    border-top:1px solid rgba(255,255,255,.35);
+
+    border-bottom:1px solid rgba(0,0,0,.05);
 
 }
 
@@ -317,9 +344,9 @@ header{
 
 .announcement span{
 
-    font-size:1.1rem;
+    font-size:1rem;
 
-    padding-right:120px;
+    padding-right:90px;
 
     color:#3D332B;
 
@@ -347,9 +374,13 @@ header{
 
     width:100%;
 
-    height:70px;
+    height:54px;
+
+    line-height:0;
 
     overflow:hidden;
+
+    margin-top:-1px;
 
 }
 
@@ -368,7 +399,6 @@ header{
     fill:var(--background);
 
 }
-
 /* ---------- Main ---------- */
 
 main{
@@ -1165,23 +1195,5 @@ main{
     margin-bottom:15px;
 
     color:#cccccc;
-
-.logo-s{
-
-    color:#F8E4B8;
-
 }
-
-.logo-amp{
-
-    color:#5B4315;
-
-}
-
-.logo-k{
-
-    color:#E2AE2A;
-
-}
-
 }
